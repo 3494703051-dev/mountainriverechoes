@@ -33,7 +33,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DOWNLOAD_DIR = BASE_DIR / 'downloads'
 DOWNLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
-HOST, PORT = '127.0.0.1', 8766
+HOST, PORT = '127.0.0.1', 8888
 # 域名 → 客户端 source (用于 /api/playlist 慢速解析时按 URL 选源)
 HOST_HINTS = [('kugou', 'KugouMusicClient'), ('kuwo', 'KuwoMusicClient'), ('y.qq.com', 'QQMusicClient'), ('migu', 'MiguMusicClient'), ('qishui', 'SodaMusicClient'), ('douyin', 'SodaMusicClient')]
 # CDN 防盗链 Referer: 按直链 URL 域名匹配, 给出对应官方域名, 缺了必 403。
